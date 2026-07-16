@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a description of the document.">
+    <meta name="keywords" content="HTML, structure, example">
+    <meta name="author" content="Nadia">
+    <title>HTML Forms</title>
+
+    <!--link-->
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <h3 style="background-color: lightgray; padding: 10px;text-align: center;">
+        Tour Registration Form
+    </h3>
+    <a href="https://www.geeksforgeeks.org/html/html-forms/">
+        Click here to visit GeeksforGeeks HTML Forms page
+    </a>
+    <form action="https://www.geeksforgeeks.org/html/html-forms/">
+        <fieldset style="background-color: lightblue; padding: 10px;">
+            <legend>Registration Form</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your Name"><br><br>
+
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required placeholder="Enter your first name"><br><br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required placeholder="Enter your last name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"><br><br>
+
+            <label for="Age">Age:</label>
+            <input type="number" id="age" name="age" required placeholder="Enter your age"><br><br>
+
+            <label for="Birthdate">Birthdate:</label>
+            <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+            <label for="when">When you want to travel?</label>
+            <input type="month" id="when" name="when" required><br><br>
+
+            <label for="password">Enter a Password:</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password"><br><br>
+
+            <label for="salary">Enter a Salary range:</label>
+            <input type="range" min="0" max="100000" required placeholder="Enter your salary range"><br><br>
+
+            <label for="gender">Enter your Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>Male
+            <input type="radio" id="female" name="gender" value="female" required>Female
+            <input type="radio" id="other" name="gender" value="other" required>Others<br><br>
+            
+            <label for="favorite">Enter your Favorite Color:</label>
+            <input type="color" id="favorite" name="favorite" required><br><br>
+
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message here"></textarea><br><br>
+
+            <label for="bus">Enter your Bus:</label>
+            <select id="bus" name="bus" required>
+                <option value="">Select a bus</option>
+                <option value="bus1">Bus 1</option>
+                <option value="bus2">Bus 2</option>
+                <option value="bus3">Bus 3</option>
+            </select><br><br>
+
+            <label for="file">Upload a file:</label>
+            <input type="file" id="file" name="file" required><br><br>
+
+            <label for="location">Enter your Location:</label>
+            <input type="text" id="location" name="location" required placeholder="Enter your location" ><br><br>
+            <h2>Location Map</h2>
+            <iframe src="https://www.google.com/maps/place/Bandarban/
+            @22.2041156,92.1959798,14z/data=!3m1!4b1!4m6!3m5!1s0x30ad6a188414e62b:0xa4c3198f81ba90d0!8m2!3d22.196146!4
+            d92.2175885!16s%2Fg%2F1216lblk?entry=ttu&g_ep=EgoyMDI2MDcxMy4wIKXMDSoASAFQAw%3D%3D" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br>
+            <button>Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
